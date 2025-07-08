@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Products Savvy Coupon Clipper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        :root {
+            --primary: #387478;
+            --accent: #4cc3cb;
+            --bg-light: #f9fafa;
+            --text-dark: #243642;
+            --danger: #e53e3e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            max-width: 700px;
+            width: 100%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .logo {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        ul li::before {
+            content: "✓ ";
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        ul li {
+            font-size: 0.95rem;
+            margin: 0.5rem 0;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .button {
+            background-color: var(--primary);
+            color: white;
+            padding: 0.6rem 1.25rem;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: var(--accent);
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="icon64.png" alt="Extension Icon" class="logo" />
+        <h1>Products Savvy Coupon Clipper</h1>
+        <p>
+            Save time and money with the most efficient coupon clipping extension available. <br />
+            Automatically activate coupons across dozens of grocery retailers like Kroger, Albertsons, Publix, and more.
+        </p>
+
+        <ul>
+            <li>Auto-scroll and load all coupons on the page</li>
+            <li>Smart detection of "Clip" or "Activate" buttons</li>
+            <li>Runs silently or on-demand via popup</li>
+            <li>No personal data collected or tracked</li>
+        </ul>
+
+        <div class="buttons">
+            <a href="https://chromewebstore.google.com/search/Products%20Savvy%20Coupon%20clipper" class="button"
+                target="_blank">Install Extension</a>
+            <a href="https://adeelahmads.github.io/Privacy-Policy---Products-Savvy-Coupon-Clipper/" class="button"
+                target="_blank">Privacy Policy</a>
+        </div>
+
+        <footer>
+            &copy; 2025 Products Savvy Coupon Clipper
+        </footer>
+    </div>
+</body>
+
+</html>
